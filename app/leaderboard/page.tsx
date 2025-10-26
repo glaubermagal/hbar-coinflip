@@ -42,7 +42,7 @@ export default async function Home() {
           </div>
           <div className="menu-buttons">
               <a href="/index.html">Home</a>
-              <a href="/stats">Leaderboard</a>
+              <a href="/leaderboard">Leaderboard</a>
           </div>
       </header>
       <div className="mx-auto max-w-7xl p-4 md:p-8">
