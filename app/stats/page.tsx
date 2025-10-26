@@ -54,7 +54,7 @@ export default async function Home() {
           </header> */}
 
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm">
               <h2 className="text-3xl font-semibold mb-4">Top Gainers</h2>
               <SimpleTable
                 columns={[
@@ -65,7 +65,7 @@ export default async function Home() {
               />
             </div>
 
-            <div className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm">
+            <div className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm">
               {/* <h3 className="text-2xl font-semibold mb-2">Win Vs Loss</h3> */}
               <h2 className="text-3xl font-semibold mb-4">Win Vs Loss</h2>
               <Donut data={donut} />
@@ -76,7 +76,7 @@ export default async function Home() {
           </section>
 
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm lg:col-span-2">
+            <div className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm lg:col-span-2">
               <h2 className="text-3xl font-semibold mb-4">Top Volume Makers</h2>
               <SimpleTable
                 columns={[
@@ -87,7 +87,7 @@ export default async function Home() {
               />
             </div>
 
-            <div className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm space-y-6">
+            <div className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm space-y-6">
               <StatCard title="Highest Winning Streak" value={String(data.maxWinStreak)} />
               <StatCard title="Highest Losing Streak" value={String(data.maxLossStreak)} />
               <StatCard title="Total Flipped" value={`${data.totalWager.toLocaleString()} ℏ`} />
@@ -95,7 +95,7 @@ export default async function Home() {
             </div>
           </section>
 
-          <section className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm">
+          <section className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm">
             <h2 className="text-3xl font-semibold mb-4">Overall Snapshot</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <StatCard title="Unique Players" value={String(data.uniquePlayers)} />
@@ -175,14 +175,14 @@ export default async function Home() {
 
 
 //       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-//         <div className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm">
+//         <div className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm">
 //           <h2 className="text-3xl font-semibold mb-4">Top Gainers</h2>
 //           <SimpleTable
 //             columns={[{ key: 'wallet', title: 'Wallet ID' }, { key: 'net', title: 'Net Gain (ℏ)' }]}
 //             rows={data.topGainers.map(x => ({ wallet: x.wallet, net: x.net.toLocaleString() }))}
 //           />
 //         </div>
-//         <div className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm">
+//         <div className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm">
 //           <h3 className="text-2xl font-semibold mb-2">Win Vs Loss</h3>
 //           <Donut data={donut} />
 //           <p className="text-center text-xl mt-6">Win Rate: {(data.winRate * 100).toFixed(2)}%</p>
@@ -191,14 +191,14 @@ export default async function Home() {
 
 
 //       <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-//         <div className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm lg:col-span-2">
+//         <div className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm lg:col-span-2">
 //           <h2 className="text-3xl font-semibold mb-4">Top Volume Makers</h2>
 //           <SimpleTable
 //             columns={[{ key: 'wallet', title: 'Wallet ID' }, { key: 'vol', title: 'Volume (ℏ)' }]}
 //             rows={data.topVolume.map(x => ({ wallet: x.wallet, vol: x.volume.toLocaleString() }))}
 //           />
 //         </div>
-//         <div className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm space-y-6">
+//         <div className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm space-y-6">
 //           <StatCard title="Highest Winning Streak" value={String(data.maxWinStreak)} />
 //           <StatCard title="Highest Losing Streak" value={String(data.maxLossStreak)} />
 //           <StatCard title="Total Flipped" value={`${data.totalWager.toLocaleString()} ℏ`} />
@@ -207,7 +207,7 @@ export default async function Home() {
 //       </section>
 
 
-//       <section className="rounded-2xl bg-[rgba(23,9,27,0.7)] text-gray-200 p-6 shadow-sm">
+//       <section className="rounded-2xl bg-[rgba(12, 5, 15, 0.8)] text-gray-200 p-6 shadow-sm">
 //         <h2 className="text-3xl font-semibold mb-4">Overall Snapshot</h2>
 //         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 //           <StatCard title="Unique Players" value={String(data.uniquePlayers)} />
