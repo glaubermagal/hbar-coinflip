@@ -43,7 +43,7 @@ export async function fetchLastLogs(contractId: string): Promise<FlipLog[]> {
     }
 
     const next = data.links?.next
-    url = next ? `${MIRROR}${next}` : ''
+    url = next ? `${MIRROR.replace('/api/v1','')}${next}` : ''
   }
 
   // Decode and normalize the selected (newest-first) logs

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  themeColor: "#000000",
+  // themeColor: "#000000",
   manifest: "/site.webmanifest", // served from /public
   icons: {
     icon: [

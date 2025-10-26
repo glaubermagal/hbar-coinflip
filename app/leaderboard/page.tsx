@@ -17,6 +17,7 @@ export default async function Home() {
     if (!CONTRACT_ID) throw new Error('Missing NEXT_PUBLIC_CONTRACT_ID');
     const logs = await fetchLastLogs(CONTRACT_ID);
     data = aggregate(logs);
+    console.log(data)
   } catch (e: any) {
     error = e?.message ?? 'Failed to load data';
   }
