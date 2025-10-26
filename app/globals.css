@@ -1,26 +1,152 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --radius: 16px
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+body {
+  background-color: #2b202e;
+  background-image: url(/bg4.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bet-on-title {
+  font-family: MyFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 32px;
+  /* text-shadow: -1.22586px 0 17.4686px rgba(106, 255, 82, .67); */
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color: #83ff49;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  z-index: 10;
+}
+
+.logo-left {
+  flex: 1 1;
+  text-align: left;
+}
+
+.menu-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-buttons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #84ff4a;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu-buttons a:hover {
+  color: #fdb104;
+}
+
+
+footer {
+  /* position: absolute; */
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  z-index: 10;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0px;
+  z-index: 10;
+}
+
+footer ul li {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: MyFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.0299px;
+  line-height: 19px;
+  color: #4aff2c;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* text-shadow: .22586px 0 17.4686px rgba(106,255,82,.67) */
+}
+
+footer p {
+  margin: 30px 0 12px 0;
+}
+
+
+@media only screen and (max-width: 920px) {
+  .bet-on-title {
+    font-size: 30px;
+  }
+  .menu-buttons a {
+    margin: 0 5px;
+  }
+}
+
+
+@font-face {
+  font-family: "MyFont";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/RoboGirls-4BzEB.ttf") format("truetype");
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  background: black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #282c34; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #282c34; 
 }

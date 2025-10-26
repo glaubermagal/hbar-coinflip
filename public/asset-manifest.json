@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9392766d.css",
+    "main.js": "/static/js/main.f679d0e3.js",
+    "static/js/845.06b2f083.chunk.js": "/static/js/845.06b2f083.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/BackgroundMusic.mp3": "/static/media/BackgroundMusic.35ee97c69a705d0c4ad8.mp3",
+    "static/media/Spin.mp3": "/static/media/Spin.a6f1d17ca26359b9dbe4.mp3",
+    "static/media/Winner.mp3": "/static/media/Winner.105e220c664c62490ce0.mp3",
+    "static/media/Lose.wav": "/static/media/Lose.cfc0ba7edc19ad8e8c65.wav",
+    "static/media/Click.mp3": "/static/media/Click.6b885d08b1dd5737c869.mp3",
+    "static/media/RoboGirls-4BzEB.ttf": "/static/media/RoboGirls-4BzEB.4a1492a6932dd2067354.ttf",
+    "index.html": "/index.html",
+    "main.9392766d.css.map": "/static/css/main.9392766d.css.map",
+    "main.f679d0e3.js.map": "/static/js/main.f679d0e3.js.map",
+    "845.06b2f083.chunk.js.map": "/static/js/845.06b2f083.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9392766d.css",
+    "static/js/main.f679d0e3.js"
+  ]
+}
